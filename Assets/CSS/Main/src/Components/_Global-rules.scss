@@ -1,0 +1,126 @@
+// Import Font Family
+// @font-face {
+//   font-family: "BloggerSans";
+//   src: url("../../../../Fonts/Blogger/BloggerSans-Medium.eot"); /* IE9 Compat Modes */
+//   src: url("../../../../Fonts/Blogger/BloggerSans-Medium.eot?#iefix")
+//       format("embedded-opentype"),
+//     /* IE6-IE8 */ url("../../../../Fonts/Blogger/BloggerSans-MediumItalic.woff")
+//       format("woff"),
+//     /* Modern Browsers */
+//       url("../../../../Fonts/Blogger/BloggerSans-Medium.ttf") format("truetype"),
+//     /* Safari, Android, iOS */
+//       url("../../../../Fonts/Blogger/BloggerSans-MediumItalic.svg#BloggerSans-Medium")
+//       format("svg"); /* Legacy iOS */
+//   font-style: normal;
+//   font-weight: normal;
+//   text-rendering: optimizeLegibility;
+// }
+@import "../Helpers/varialbes";
+@import "../Helpers/Mixins";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "BloggerSans", sans-serif;
+}
+a {
+  color: unset;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+
+  &.list li {
+    display: inline-block;
+  }
+}
+html {
+  font-size: 14px !important;
+  scroll-behavior: smooth;
+
+  @include breakpoint-down(medium) {
+    font-size: 12px !important;
+  }
+}
+
+// Positions
+// class='pos-re pos-ab '
+// Position
+.pos {
+  &-re {
+    position: relative;
+  }
+  &-ab {
+    position: absolute;
+  }
+  &-fi {
+    position: fixed;
+  }
+}
+
+// Display
+.d {
+  // Flex Box
+  &-flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.jc-c {
+      justify-content: center;
+    }
+    &.jc-sb {
+      justify-content: space-between;
+    }
+    &.jc-se {
+      justify-content: space-evenly;
+    }
+    &.jc-sa {
+      justify-content: space-around;
+    }
+    &.jc-fs {
+      justify-content: flex-start;
+    }
+    &.jc-fe {
+      justify-content: flex-end;
+    }
+
+    &.al-c {
+      align-items: center;
+    }
+    &.al-fe {
+      align-items: flex-end;
+    }
+    &.al-fs {
+      align-items: flex-start;
+    }
+
+    &.align-x-y {
+      align-items: center;
+      justify-content: center;
+    }
+    // Flex Direction
+    &.dir-col {
+      flex-direction: column;
+    }
+    &.dir-row {
+      flex-direction: row;
+    }
+  }
+  &-block {
+    display: block;
+  }
+  &-none {
+    display: none;
+  }
+}
+
+// Z-Index
+@for $i from 0 through 10 {
+  .z-i-#{$i} {
+    z-index: $i * 100;
+  }
+}

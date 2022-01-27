@@ -1,0 +1,73 @@
+@import "../Helpers/varialbes";
+@import "../Helpers/Mixins";
+
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $color-white;
+  padding: 18px 50px;
+  box-shadow: $box-shadow;
+
+  .logo {
+    a {
+      color: $color-black;
+      font-size: $font-logo;
+      font-weight: bold;
+
+      .icon {
+        color: $color-green;
+      }
+    }
+  }
+
+  .navbar-sections {
+    .navbar__links {
+      a {
+        font-size: $font-lg;
+        font-weight: lighter;
+        border-radius: 0.5rem 1rem;
+        color: $color-light;
+        padding: 10px 15px;
+        transition: $transition;
+        &.active,
+        &:hover {
+          color: $color-white;
+          background-color: $color-green;
+        }
+      }
+    }
+  }
+  .header-icons {
+    .icon {
+      cursor: pointer;
+      margin: {
+        left: 0.5rem;
+      }
+      display: inline-block;
+      height: 4rem;
+      width: 4rem;
+      line-height: 4rem;
+      text-align: center;
+      font-size: 1.5rem;
+      color: black;
+      border-radius: 50%;
+      background-color: #eee;
+      transition: $transition;
+      &:hover {
+        color: $color-white;
+        background-color: $color-green;
+        transform: rotate(360deg);
+      }
+      &#menu-bars {
+        display: none;
+      }
+    }
+    @include breakpoint-down(medium) {
+    }
+  }
+
+  @include breakpoint-down(medium) {
+    padding: 1rem;
+  }
+}

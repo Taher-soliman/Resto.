@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "BloggerSans", sans-serif;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+ul.list li {
+  display: inline-block;
+}
+
+html {
+  font-size: 14px !important;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 12px !important;
+  }
+}
+
+.pos-re {
+  position: relative;
+}
+
+.pos-ab {
+  position: absolute;
+}
+
+.pos-fi {
+  position: fixed;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.d-flex.jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.d-flex.jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.d-flex.jc-se {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.d-flex.jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.d-flex.jc-fs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.d-flex.jc-fe {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.d-flex.al-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.d-flex.al-fe {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.d-flex.al-fs {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.d-flex.align-x-y {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.d-flex.dir-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.d-flex.dir-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.z-i-0 {
+  z-index: 0;
+}
+
+.z-i-1 {
+  z-index: 100;
+}
+
+.z-i-2 {
+  z-index: 200;
+}
+
+.z-i-3 {
+  z-index: 300;
+}
+
+.z-i-4 {
+  z-index: 400;
+}
+
+.z-i-5 {
+  z-index: 500;
+}
+
+.z-i-6 {
+  z-index: 600;
+}
+
+.z-i-7 {
+  z-index: 700;
+}
+
+.z-i-8 {
+  z-index: 800;
+}
+
+.z-i-9 {
+  z-index: 900;
+}
+
+.z-i-10 {
+  z-index: 1000;
+}
+
+header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 18px 50px;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+header .logo a {
+  color: #192a56;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header .logo a .icon {
+  color: #27ae60;
+}
+
+header .navbar-sections .navbar__links a {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  border-radius: 0.5rem 1rem;
+  color: #666;
+  padding: 10px 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .navbar-sections .navbar__links a.active, header .navbar-sections .navbar__links a:hover {
+  color: #fff;
+  background-color: #27ae60;
+}
+
+header .header-icons .icon {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  border-radius: 50%;
+  background-color: #eee;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .header-icons .icon:hover {
+  color: #fff;
+  background-color: #27ae60;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+header .header-icons .icon#menu-bars {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

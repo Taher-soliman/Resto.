@@ -1,0 +1,19 @@
+// Media Queries
+$breakpoints-down: (
+  "small": "767px",
+  "medium": "991px",
+  "large": "1200px",
+  "x-large": "1440px",
+);
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+/// How To Use
+/// @include breakpoint-down(medium){ => max-width 991px
+///     min-height: 25rem;
+///    background-position: center 70%;
+///   }
