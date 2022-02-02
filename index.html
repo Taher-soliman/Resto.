@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font Awesome  Link -->
     <link rel="stylesheet" href="Assets/CSS/Vendors/all.min.css" />
-
+    <!-- Swipper CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <!-- Main CSS File -->
     <link rel="stylesheet" href="Assets/CSS/Main/public/style.css" />
     <title>Resto.</title>
@@ -51,9 +55,9 @@
 
     <!-- Start  Home Section -->
     <section class="home" id="home">
-      <div class="home__slider">
-        <div class="wrapper">
-          <div class="slide d-flex al-c jc-c">
+      <div class="swiper home__slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="slide swiper-slide d-flex al-c jc-c">
             <div class="content">
               <span>our special dish</span>
               <h3>Spicy noodels</h3>
@@ -68,7 +72,7 @@
               <img src="Assets/Images/home-img-1.png" alt="" />
             </div>
           </div>
-          <div class="slide d-flex al-c jc-c">
+          <div class="slide swiper-slide d-flex al-c jc-c">
             <div class="content">
               <span>our special dish</span>
               <h3>fried chicken</h3>
@@ -83,7 +87,7 @@
               <img src="Assets/Images/home-img-2.png" alt="" />
             </div>
           </div>
-          <div class="slide d-flex al-c jc-c">
+          <div class="slide swiper-slide d-flex al-c jc-c">
             <div class="content">
               <span>our special dish</span>
               <h3>hot pizza</h3>
@@ -99,11 +103,14 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <!-- End  Home Section -->
 
     <script src="Assets/JS/Vendors/all.min.js"></script>
+    <!-- Swipper CDN Link -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="Assets/JS/Main/App.js"></script>
   </body>
 </html>

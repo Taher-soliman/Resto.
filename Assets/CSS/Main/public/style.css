@@ -46,10 +46,25 @@ html {
   }
 }
 section {
-  padding: 2rem 9%;
+  padding: 2rem 6%;
 }
 section:nth-child(even) {
   background-color: #eee;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: var(--font-lg);
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: var(--color-green);
+  letter-spacing: 0.1rem;
 }
 .pos-re {
   position: relative;
@@ -204,7 +219,7 @@ header {
   top: 0;
   left: 0;
   background-color: var(--color-white);
-  padding: 18px 50px;
+  padding: 18px 6%;
   -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
@@ -343,10 +358,6 @@ header .header-icons .icon#menu-bars {
 /* End Nav Bar Section */
 
 /* Start Home Style */
-.home {
-}
-.home .home__slider {
-}
 .home .home__slider .slide {
   flex-wrap: wrap;
   gap: 2rem;

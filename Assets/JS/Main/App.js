@@ -23,3 +23,17 @@ searchIcon.addEventListener("click", () => {
 closeSearch.addEventListener("click", () => {
   document.querySelector("#search-form").classList.remove("active");
 });
+// Activate Swipper Slider
+let swiper = new Swiper(".home__slider", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 7500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop: true,
+});
